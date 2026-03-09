@@ -11,16 +11,34 @@
     <style>
         body { margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; background-color: #f2f2f2; color: #333; }
         .container { max-width: 480px; margin: 0 auto; background-color: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
-        .main-header { background-color: #1a2a44; color: #fff; padding: 0; text-align: center; }
+        .main-header { background-color: #1a2a44; color: #fff; text-align: center; }
         .main-img { width: 100%; display: block; }
         .content { padding: 50px 30px; text-align: center; }
         .title { font-family: 'Nanum Myeongjo', serif; font-size: 26px; color: #1a2a44; margin-bottom: 15px; font-weight: 700; }
         .subtitle { font-size: 16px; color: #c5a059; letter-spacing: 2px; margin-bottom: 40px; font-weight: 500; }
         .message { line-height: 2; font-size: 15px; color: #555; margin-bottom: 50px; font-weight: 300; }
-        .info-section { border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 30px 0; margin-bottom: 40px; }
-        .info-row { display: flex; justify-content: center; margin-bottom: 10px; font-size: 15px; }
+        
+        /* 정보 섹션 및 버튼 스타일 */
+        .info-section { border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 30px 0; margin-bottom: 30px; }
+        .info-row { display: flex; justify-content: center; margin-bottom: 12px; font-size: 15px; }
         .label { font-weight: 500; color: #1a2a44; width: 60px; text-align: left; }
-        .value { color: #666; text-align: left; }
+        .value { color: #666; text-align: left; flex: 1; }
+        
+        .map-button {
+            display: inline-block;
+            width: 100%;
+            background-color: #f8f9fa;
+            color: #1a2a44;
+            border: 1px solid #1a2a44;
+            padding: 12px 0;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        .map-button:active { background-color: #1a2a44; color: #fff; }
     </style>
 </head>
 <body>
@@ -44,12 +62,15 @@
             <div class="info-section">
                 <div class="info-row">
                     <span class="label">일시</span>
-                    <span class="value">2026년 3월 28일(토) 오후 5시</span>
+                    <span class="value">2026년 4월 19일(일) 오전 10시</span>
                 </div>
                 <div class="info-row">
                     <span class="label">장소</span>
-                    <span class="value">불광체육관 내 연회장</span>
+                    <span class="value">불광초등학교 체육관</span>
                 </div>
+                <a href="https://map.kakao.com/link/search/불광초등학교 체육문화센터" target="_blank" class="map-button">
+                    📍 카카오맵에서 위치 보기
+                </a>
             </div>
             
             <p style="font-size: 13px; color: #999;">불광 배드민턴 클럽 회원 일동 올림</p>
