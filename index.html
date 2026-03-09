@@ -24,21 +24,22 @@
         .label { font-weight: 500; color: #1a2a44; width: 60px; text-align: left; }
         .value { color: #666; text-align: left; flex: 1; }
         
-        .map-button {
-            display: inline-block;
-            width: 100%;
-            background-color: #f8f9fa;
+        .map-btn-small {
+            display: block;
+            background-color: #fff;
             color: #1a2a44;
-            border: 1px solid #1a2a44;
-            padding: 12px 0;
+            border: 1px solid #ddd;
+            padding: 10px 0;
             text-decoration: none;
             border-radius: 5px;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 500;
-            margin-top: 10px;
-            transition: all 0.3s;
+            transition: all 0.2s;
         }
-        .map-button:active { background-color: #1a2a44; color: #fff; }
+        .map-btn-small:active {
+            background-color: #f4f4f4;
+            border-color: #1a2a44;
+        }
     </style>
 </head>
 <body>
@@ -68,13 +69,16 @@
                     <span class="label">장소</span>
                     <span class="value">불광초등학교 체육관</span>
                 </div>
-                <a href="https://map.kakao.com/link/search/불광초등학교 체육문화센터" target="_blank" class="map-button">
-                    📍 카카오맵에서 위치 보기
-                </a>
-            </div>
+                <p style="font-size: 13px; color: #888; margin: 20px 0 10px;">원하시는 지도를 선택해 주세요</p>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px;">
+                    <a href="https://map.kakao.com/link/search/불광초등학교 체육문화센터" target="_blank" class="map-btn-small">카카오</a>
+                    <a href="https://map.naver.com/v5/search/불광초등학교 체육문화센터" target="_blank" class="map-btn-small">네이버</a>                    
+                    <a href="https://apis.openapi.sk.com/tmap/app/routes?appKey=발급받은키&name=불광초등학교체육문화센터" target="_blank" class="map-btn-small">T맵</a>
+                </div>
             
-            <p style="font-size: 13px; color: #999;">불광 배드민턴 클럽 회원 일동 올림</p>
-        </div>
+                <p style="font-size: 13px; color: #999;">불광 배드민턴 클럽 회원 일동 올림</p>
+            </div>
     </div>
 </body>
 </html>
