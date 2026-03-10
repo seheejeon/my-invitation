@@ -21,15 +21,12 @@
         
         /* 정보 섹션 및 버튼 스타일 */
         .info-section { border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 30px 0; margin-bottom: 30px; }
-        .info-row { display: flex; justify-content: center; margin-bottom: 12px; font-size: 15px; }
-        .label { font-family: "Gothic A1", sans-serif; font-weight: 500; width: 60px; text-align: left; }
-        .value { font-family: "Gothic A1", sans-serif; color: #666; text-align: left; flex: 1; }
+        .info-row { display: flex; justify-content: center; margin-bottom: 12px; }
+        .label { font-family: "Gothic A1", sans-serif; font-weight: 500; width: 60px; text-align: left; font-size: 15px; }
+        .value { font-family: "Gothic A1", sans-serif; color: #666; text-align: left; flex: 1; font-size: 15px; }
         
         .map-btn-small {
             display: block;
-            background-color: #fff;
-            color: #1a2a44;
-            border: 1px solid #ddd;
             padding: 10px 0;
             text-decoration: none;
             border-radius: 5px;
@@ -37,10 +34,10 @@
             font-weight: 500;
             transition: all 0.2s;
         }
-        .map-btn-small:active {
-            background-color: #f4f4f4;
-            border-color: #1a2a44;
-        }
+
+        .kakao {background-color:#fee500;}
+        .naver {background-color:#05ac4f;}
+        
         .root_daum_roughmap {width:420px !important; margin-top:10px}
     </style>
 </head>
@@ -92,11 +89,11 @@
                     }).render();
                 </script>
                 
-                <p style="font-size: 13px; color: #888; margin: 20px 0 10px;">📍원하시는 지도를 선택해 주세요</p>
+                <p style="font-size: 13px; color: #888; margin: 20px 0 10px; border-top:1px solid #eee; padding-top:20px; margin-bottom:20px;">📍원하시는 지도를 선택해 주세요</p>
                 
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
-                    <a href="https://naver.me/GKbG986Z" target="_blank" class="map-btn-small">카카오맵 보러가기</a>
-                    <a href="https://place.map.kakao.com/24544829" target="_blank" class="map-btn-small">네이버지도 보러가기</a>
+                    <a href="https://naver.me/GKbG986Z" target="_blank" class="map-btn-small kakao"><img src="kakao.png" alt="카카오맵">카카오맵 보러가기</a>
+                    <a href="https://place.map.kakao.com/24544829" target="_blank" class="map-btn-small naver"><img src="naver.png" alt="네이버지도">네이버지도 보러가기</a>
                 </div>
             
             </div>
